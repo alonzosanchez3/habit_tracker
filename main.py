@@ -30,8 +30,8 @@ headers = {
 }
 
 
-response = requests.post(graph_endpoint, json=graph_config, headers=headers)
-print(response.text)
+# response = requests.post(graph_endpoint, json=graph_config, headers=headers)
+# print(response.text)
 
 pixel_endpoint = f"{graph_endpoint}/graph1"
 
