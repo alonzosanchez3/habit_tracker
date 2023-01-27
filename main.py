@@ -60,4 +60,6 @@ pixel_update_config = {
 response = requests.delete(url=pixel_update_endpoint, headers=headers)
 print(response.text)
 
+#finshed project
+
 
