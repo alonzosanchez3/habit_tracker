@@ -54,5 +54,10 @@ pixel_update_config = {
   "quantity": '2'
 }
 
-response = requests.put(url=pixel_update_endpoint, json=pixel_update_config, headers=headers)
+# response = requests.put(url=pixel_update_endpoint, json=pixel_update_config, headers=headers)
+# print(response.text)
+
+response = requests.delete(url=pixel_update_endpoint, headers=headers)
 print(response.text)
+
+
