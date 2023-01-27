@@ -45,5 +45,14 @@ pixel_config = {
   'quantity': '1'
 }
 
-response = requests.post(pixel_endpoint, json=pixel_config, headers=headers)
+# response = requests.post(pixel_endpoint, json=pixel_config, headers=headers)
+# print(response.text)
+
+pixel_update_endpoint = f"{pixel_endpoint}/{date}"
+
+pixel_update_config = {
+  "quantity": '2'
+}
+
+response = requests.put(url=pixel_update_endpoint, json=pixel_update_config, headers=headers)
 print(response.text)
